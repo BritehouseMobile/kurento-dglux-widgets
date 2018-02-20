@@ -1,1 +1,14 @@
-{"name":"kurento","owner":"dgSuper","canRead":["all","guest"],"canWrite":[],"isTemplate":false,"category":null,"description":"Javascript Libraries","version":"1.0","firstDayOfWeek":0}
+{
+  "name": "kurento",
+  "owner": "dgSuper",
+  "canRead": [
+    "all",
+    "guest"
+  ],
+  "canWrite": [],
+  "isTemplate": false,
+  "category": null,
+  "description": "Javascript Libraries",
+  "version": "1.0",
+  "firstDayOfWeek": 0
+}
