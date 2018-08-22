@@ -252,7 +252,7 @@ define([
             "isMediaFlowingOut": function(widget, value) {
             },
             "seek": function (widget, value) {
-                if (value != undefined) {
+                if (value != undefined && widget.player != null && typeof widget.seekTime == 'number') {
                     console.log("Seeking to: " + widget.seekTime);
                     widget.player.setPosition(widget.seekTime).then(function(result) {
                     });
