@@ -807,7 +807,8 @@ if (typeof window === 'undefined' || !window.navigator) {
       // Build the mline.
       sdp += 'm=' + kind + ' ';
       sdp += caps.codecs.length > 0 ? '9' : '0'; // reject if no codecs.
-      sdp += ' UDP/TLS/RTP/SAVPF ';
+      //sdp += ' UDP/TLS/RTP/SAVPF ';
+      sdp += ' TCP/TLS/RTP/SAVPF ';
       sdp += caps.codecs.map(function(codec) {
         if (codec.preferredPayloadType !== undefined) {
           return codec.preferredPayloadType;
